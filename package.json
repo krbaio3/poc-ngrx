@@ -14,20 +14,21 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "yarn clean && ./node_modules/.bin/webpack --config webpack.dev.js",
-        "clean": "./node_modules/.bin/rimraf dist"
+        "clean": "./node_modules/.bin/rimraf dist",
+        "start": "./node_modules/.bin/ts-node src/main.ts"
     },
     "keywords": [
         "ngrx",
         "ng"
     ],
-    "dependencies": {
+    "dependencies": {},
+    "devDependencies": {
         "rimraf": "^2.6.2",
         "ts-loader": "^4.4.2",
         "ts-node": "^7.0.0",
+        "tslint": "^5.10.0",
         "typescript": "^2.9.2",
-        "webpack": "^4.16.0"
-    },
-    "devDependencies": {
+        "webpack": "^4.16.0",
         "webpack-command": "^0.4.1"
     }
 }

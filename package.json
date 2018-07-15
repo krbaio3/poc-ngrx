@@ -1,0 +1,33 @@
+{
+    "name": "pocngrx",
+    "version": "1.0.0",
+    "description": "POC sobre NGRX",
+    "main": "main.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://krbaio3@bitbucket.org/krbaio3/pocngrx.git"
+    },
+    "author": "KrBaIO3 <krbaio3@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "homepage": "https://bitbucket.org/krbaio3/pocngrx#readme",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "yarn clean && ./node_modules/.bin/webpack --config webpack.dev.js",
+        "clean": "./node_modules/.bin/rimraf dist"
+    },
+    "keywords": [
+        "ngrx",
+        "ng"
+    ],
+    "dependencies": {
+        "rimraf": "^2.6.2",
+        "ts-loader": "^4.4.2",
+        "ts-node": "^7.0.0",
+        "typescript": "^2.9.2",
+        "webpack": "^4.16.0"
+    },
+    "devDependencies": {
+        "webpack-command": "^0.4.1"
+    }
+}

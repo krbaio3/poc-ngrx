@@ -1,22 +1,22 @@
-import { incrementarAction, decrementarAction, multiplicarAction, dividirAction, resetAction } from './actions';
+import { Store, createStore } from 'redux';
 import { contadorReducer } from './reducer/reducer';
-import { Store } from './store/store';
+import { incrementarAction } from './actions';
 
+const store: Store = createStore( contadorReducer );
 
-const store = new Store( contadorReducer, 70);
+store.subscribe( () => {
+    console.log(`Subs: ${store.getState()}`);
+})
 
-console.log(store.getState());
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
 
-// Acciones
-store.dispatch( incrementarAction );
-store.dispatch( incrementarAction );
-store.dispatch( incrementarAction );
-console.log(store.getState());
-store.dispatch( decrementarAction );
-console.log(store.getState());
-store.dispatch( multiplicarAction );
-console.log(store.getState());
-store.dispatch( dividirAction );
-console.log(store.getState());
-store.dispatch( resetAction );
-console.log(store.getState());
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+store.dispatch( incrementarAction);
+

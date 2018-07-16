@@ -7,6 +7,6 @@ export class Todo {
     this.texto = texto.charAt(0).toUpperCase() + texto.slice(1);
     this.completado = false;
     //simulamos un id de base de datos
-    this.id = Math.random();
+    this.id = Math.floor(Math.random() * 100000);
   }
 }

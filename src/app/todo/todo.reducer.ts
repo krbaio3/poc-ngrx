@@ -1,7 +1,11 @@
 import * as fromToDo from './todo.actions';
 import { Todo } from './models/todo.model';
 
-const estadoInicial : Todo[] = [];
+const todo1 = new Todo('Salvar España');
+const todo2 = new Todo('Hola Mundo');
+todo2.completado = true;
+
+const estadoInicial : Todo[] = [todo1, todo2];
 
 export function todoReducer(state = estadoInicial, action: fromToDo.Acciones): Todo[] {
 

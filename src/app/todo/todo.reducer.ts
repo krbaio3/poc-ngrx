@@ -30,6 +30,22 @@ export function todoReducer(
         }
       });
 
+    case fromToDo.EDITAR_TODO:
+      return state.map(todoEdit => {
+        if (todoEdit.id === action.id) {
+          // El spread operator funciona muy parecido al Object.assign.
+          /**
+              Otra forma de hacer esto es:
+              return Object.assign({}, state, {completado : !todoEdit.completado});
+            **/
+          return { ...todoEdit,
+                    texto: action.texto
+                 };
+        } else {
+          return todoEdit;
+        }
+      });
+
     default:
       return state;
   }

@@ -4,7 +4,7 @@ import { AppState } from '../../app.reducers';
 import { Todo } from '../models/todo.model';
 
 @Component({
-  selector: 'app-todos-list',
+  selector: 'app-todo-list',
   templateUrl: './todos-list.component.html',
   styles: []
 })

@@ -6,11 +6,11 @@ import { AppState } from '../../app.reducers';
 import { ToggleTodoAction } from '../todo.actions';
 
 @Component({
-  selector: 'app-todos-item',
-  templateUrl: './todos-item.component.html',
+  selector: 'app-todo-item',
+  templateUrl: './todo-item.component.html',
   styles: [],
 })
-export class TodosItemComponent implements OnInit {
+export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
   chkField: FormControl;
   txtInput: FormControl;

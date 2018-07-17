@@ -30,6 +30,11 @@ export function todoReducer(
         }
       });
 
+    case fromToDo.TOGGLE_ALL_TODO:
+      return state.map(todoAll => {
+          return { ...todoAll, completado: action.completado };
+      });
+
     case fromToDo.EDITAR_TODO:
       return state.map(todoEdit => {
         if (todoEdit.id === action.id) {
@@ -38,14 +43,17 @@ export function todoReducer(
               Otra forma de hacer esto es:
               return Object.assign({}, state, {completado : !todoEdit.completado});
             **/
-          return { ...todoEdit,
-                    texto: action.texto
-                 };
+          return {
+            ...todoEdit,
+            texto: action.texto
+          };
         } else {
           return todoEdit;
         }
       });
 
+    case fromToDo.BORRAR_TODO:
+      return state.filter(todoRemove => todoRemove.id !== action.id);
     default:
       return state;
   }

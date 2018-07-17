@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 // NGRX
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { todoReducer } from './todo/todo.reducer';
+import { appReducers } from './app.reducers';
 
 // Forms
 import { ReactiveFormsModule } from '@angular/forms';
@@ -31,7 +31,7 @@ import { environment } from '../environments/environment.prod';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    StoreModule.forRoot({ todos: todoReducer }),
+    StoreModule.forRoot(appReducers),
     // Instrumentation must be imported after importing StoreModule (config is optional)
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

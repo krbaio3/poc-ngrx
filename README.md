@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+Revisar para el nginx esta web
+
+https://medium.com/@asfo/haciendo-el-despliegue-de-una-aplicaci%C3%B3n-angular-angular-cli-a-producci%C3%B3n-con-docker-y-nginx-e1c43d174f2d

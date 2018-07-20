@@ -60,6 +60,6 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 #COPY server.key /etc/nginx/ssl/
 #COPY server.crt /etc/nginx/ssl/
 
-EXPOSE 80 443
+EXPOSE 80 443 4201
 
 CMD nginx

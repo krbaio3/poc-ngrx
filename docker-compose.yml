@@ -2,7 +2,8 @@ app:
   build: ./nginx
   restart: always
   volumes:
-    - ./dist:/var/www/html/dist
+    - ./dist/todoApp:/var/www/html/dist/todoApp
   ports:
-    - "80:80"
     - "443:443"
+    - "4201:4201"
+    - "8080:80"

@@ -17,6 +17,7 @@ import { TodoItemComponent } from './todo/todo-item/todo-item.component';
 import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
 import { TodoAddComponent } from './todo/todo-add/todo-add.component';
 import { environment } from '../environments/environment.prod';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { environment } from '../environments/environment.prod';
     TodoItemComponent,
     TodoFooterComponent,
     TodoAddComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

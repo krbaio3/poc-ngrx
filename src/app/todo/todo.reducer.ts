@@ -54,6 +54,8 @@ export function todoReducer(
 
     case fromToDo.BORRAR_TODO:
       return state.filter(todoRemove => todoRemove.id !== action.id);
+    case fromToDo.BORRAR_COMPLETADOS:
+      return state.filter(todoRemove => !todoRemove.completado);
     default:
       return state;
   }

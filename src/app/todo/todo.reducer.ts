@@ -1,7 +1,7 @@
 import * as fromToDo from './todo.actions';
 import { Todo } from './models/todo.model';
 
-const todo1 = new Todo('Salvar España');
+const todo1 = new Todo('Ir de Vacaciones');
 const todo2 = new Todo('Hola Mundo');
 todo2.completado = true;
 

@@ -1,3 +1,4 @@
+
 import { Store, createStore } from 'redux';
 import { contadorReducer } from './reducer/reducer';
 import { incrementarAction } from './actions';
@@ -19,4 +20,3 @@ store.dispatch( incrementarAction);
 store.dispatch( incrementarAction);
 store.dispatch( incrementarAction);
 store.dispatch( incrementarAction);
-

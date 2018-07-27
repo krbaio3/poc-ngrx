@@ -1,6 +1,7 @@
-# Pocngrxjs
+# Poc-ngrx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. 
+This repository is personal for POC with Angular 6 + NGRX. In this proyect, I use the "scaffold" [todomvc-app-css](https://github.com/tastejs/todomvc-app-css). If you watch this proyect, and you have dudes, write me, please. 
 
 ## Development server
 

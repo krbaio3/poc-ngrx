@@ -1,22 +1,12 @@
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { Store, createStore } from 'redux';
-import { contadorReducer } from './reducer/reducer';
-import { incrementarAction } from './actions';
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
 
-const store: Store = createStore( contadorReducer );
+if (environment.production) {
+  enableProdMode();
+}
 
-store.subscribe( () => {
-    console.log(`Subs: ${store.getState()}`);
-})
-
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
-store.dispatch( incrementarAction);
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.log(err));

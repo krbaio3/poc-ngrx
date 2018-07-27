@@ -1,6 +1,7 @@
 {
   "name": "poc-ngrx",
   "version": "0.0.0",
+  "description": "POC sobre NGRX",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +10,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "main": "main.ts",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/krbaio3/poc-ngrx.git"
+  },
+  "author": "KrBaIO3 <krbaio3@gmail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.3",
